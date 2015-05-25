@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<converter>
+		<converter-id>calendarConverterId</converter-id>
+		<converter-class>com.converters.CalendarConverter</converter-class>
+	</converter>
+	<converter>
+		<converter-id>connectionTypeConverterId</converter-id>
+		<converter-class>com.converters.ConnectionTypeConverter</converter-class>
+	</converter>
+	<managed-bean>
+		<managed-bean-name>billSchemeMB</managed-bean-name>
+		<managed-bean-class>com.presentationtier.BillSchemeMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>reportMB</managed-bean-name>
+		<managed-bean-class>com.presentationtier.ReportMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>updateSchemeMB</managed-bean-name>
+		<managed-bean-class>com.presentationtier.UpdateSchemeMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<validator>
+		<validator-id>nameValidatorId</validator-id>
+		<validator-class>com.validators.NameValidator</validator-class>
+	</validator>
+
+</faces-config>
